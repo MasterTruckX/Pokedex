@@ -4,11 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
+    <h1>Pokedex</h1>
+    <section>
+        <h2>Add Characters</h2>
+        <div>
+            <h3>Add Pokemon</h3>
+            <!-- name,originCity,url,moves,type -->
+            <label for="pokename">Pokemon Name</label>
+            <input type="text" id="pokename" name="pokename">
+            <label for="pokecity">Origin City</label>
+            <input type="text" id="pokecity" name="pokecity">
+            <label for="pokeurl">Url</label>            
+            <input type="url" id="pokeurl" name="pokeurl">
+            <label for="moves">Moves</label>
+            <input type="text" id="moves" name="moves">
+            <input type="text" id="moves2" name="moves2">
+            <input type="text" id="moves3" name="moves3">
+            <input type="text" id="moves4" name="moves4">
+            <label for="type">Type</label>
+            <input type="text" id="type" name="type">
+            <input type="text" id="type2" name="type2">
+            <div class="lgbtn">
+              <button type="button" class="btn btn-secondary btn-lg btn-block">Add Pokemon</button>
+            </div>
+            
+        </div>
+        <div>
+            <h3>Add Person</h3>
+            <!-- name, originCity, url,lastName,friends,caughtPokemon -->
+            <label for="personname">Person Name</label>
+            <input type="text" id="personname" name="personname">
+            <label for="personlastname">Person Last Name</label>
+            <input type="text" id="personlastname" name="personlastname">
+            <label for="personcity">Origin City</label>
+            <input type="text" id="personcity" name="personcity">
+            <label for="personurl">Url</label>
+            <input type="url" id="personurl" name="personurl">
+            <!-- <label for="personfriends">Friends</label>
+            <input type="text" id="personfriends" name="personfriends">
+            <input type="text" id="friend2" name="friend2">
+            <input type="text" id="friend3" name="friend3">
+            <label for="personpokes">Pokemons</label>
+            <input type="text" id="personpokes" name="personpokes">
+            <input type="text" id="pokes2" name="pokes2">
+            <input type="text" id="pokes3" name="pokes3"> -->
+            <div class="lgbtn">
+              <button type="button" class="btn btn-secondary btn-lg btn-block">Add Person</button>
+            </div>
+            
+        </div>
+          
+    </section>
+    <section>
+        <h2>Edit Characters</h2>
+        <div>
+            <h3>Tame Pokemon</h3>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                  Available Pokemon
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            <label for="pokenickname">Nickname</label>
+            <input type="text" id="pokenickname" name="pokenickname">
+            <label for="poketrainer">Trainer</label>
+            <input type="text" id="poketrainer">
+            <div class="lgbtn">
+              <button type="button" class="btn btn-secondary btn-lg btn-block">Tame Pokemon</button>
+            </div>
+            
+        </div>
+        <div>
+            <h3>Add Friends</h3>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                  Characters
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <div class="lgbtn">
+              <button type="button" class="btn btn-secondary btn-lg btn-block">Add Friends</button>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <h2>Search Characters</h2>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+              Characters
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+        <div class="character_img"></div>
+        <div class="character_name"></div>
+        <div class="character_city"></div>
+        <div class="poke_moves"></div>
+        <div class="poke_type"></div>
+        <div class="poke_nickname"></div>
+        <div class="poke_trainer"></div>
+        <div class="friends"></div>
+    </section>
+    <hr>
     <a href="https://www.pokemon.com/us/pokedex">Everything Pokemon</a><hr>
     <a href="https://pokemondb.net/pokedex/all">Real Pokedex</a>
     <script src="main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>

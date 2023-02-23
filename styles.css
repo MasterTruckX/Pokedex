@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("imgs/pokedex_bgn2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    background-color: #cccccc;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+}
+h2{
+    font-style: oblique;
+    padding-left: 3em;
+}
+.lgbtn{
+    padding: 10px;
+}
+
+.dropdown{
+    padding: 10px;
+}
+
+section{
+    flex-wrap: nowrap;
+    flex-direction:row;
+}

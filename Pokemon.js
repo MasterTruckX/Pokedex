@@ -1,15 +1,19 @@
-import { Character } from "./Character.js"
+import { Character } from "./Character.js";
 class Pokemon extends Character{
-    constructor(name,originCity,url){
+    constructor(name,originCity,url,moves,type){
         super(name,originCity,url)
-        this.moves = []
-        this.type = []
+        this.moves = moves
+        this.type = type
     }
-    addMoves(move){
-        this.moves.push(move)
-    }
-    addType(types){
-        this.type.push(types)
+    obtainInfo(){
+        return `
+        <section>
+            <p>Name ${this.name}</p>
+            <p>Origin City ${this.originCity}</p>
+            <p>Moves ${this.moves}</p>
+            <p>Type ${this.type}</p>
+        </section>
+        `
     }
 }
 export {Pokemon}
