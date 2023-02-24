@@ -4,7 +4,6 @@ body{
     background-image: url("imgs/pokedex_bgn2.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
     background-color: #cccccc;
 }
 h1{
@@ -13,17 +12,39 @@ h1{
 }
 h2{
     font-style: oblique;
-    padding-left: 3em;
+    margin-left: 3em;
 }
 .lgbtn{
-    padding: 10px;
+    margin: 10px;
+}
+.addpokemon{
+    display: flex;
+    flex-wrap:nowrap;
 }
 
-.dropdown{
-    padding: 10px;
+.addpokemon-left{
+    float: left;
 }
+
+.addpokemon-right{
+    float: right;
+    margin-left: 5em;
+}
+.addpersons{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.addpersons-left{
+    float: left;
+}
+.addpersons-right{
+    float: right;
+    margin-left: 5em;
+}
+
 
 section{
     flex-wrap: nowrap;
     flex-direction:row;
+    margin-left: 5px;
 }
