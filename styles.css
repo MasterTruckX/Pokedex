@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url("imgs/pokedex_bgn2.jpg");
+    background-image: url("imgs/pokedex_bgn.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: #cccccc;
@@ -42,7 +42,9 @@ h2{
     margin-left: 5em;
 }
 
-
+.card{
+    background-image: url("imgs/pokedex_bgn2.jpg");
+}
 section{
     flex-wrap: nowrap;
     flex-direction:row;

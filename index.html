@@ -13,105 +13,154 @@
     <section>
         <hr>
         <h2>Add Characters</h2>
-        <div>
-            <h3>Add Pokemon</h3>
-            <!-- name,originCity,url,moves,type -->
-            <div class="addpokemon">
 
-              <div class="addpokemon-left">
-                <div>
-                  <label for="pokename">Pokemon Name</label>
-                  <input type="text" id="pokename" name="pokename">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Add Pokemon
+                </button>
+              </h2>
+            </div>
+        
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="addpokemon">
+
+                  <div class="addpokemon-left">
+                    <div>
+                      <label for="pokename">Pokemon Name</label>
+                      <input type="text" id="pokename" name="pokename">
+                    </div>
+                    <div>
+                      <label for="pokecity">Origin City</label>
+                      <input type="text" id="pokecity" name="pokecity">
+                    </div>
+                    <div>
+                      <label for="pokeurl">Url</label>            
+                      <input type="url" id="pokeurl" name="pokeurl">
+                    </div>             
+                    
+                  </div>
+                  <div class="addpokemon-right">
+                    <div>
+                      <label for="moves">Moves</label>
+                      <input type="text" id="moves" name="moves">
+                      <input type="text" id="moves2" name="moves2">
+                      <input type="text" id="moves3" name="moves3">
+                      <input type="text" id="moves4" name="moves4">
+                    </div>
+                    <div>
+                      <label for="type">Type</label>
+                      <input type="text" id="type" name="type">
+                      <input type="text" id="type2" name="type2">
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <label for="pokecity">Origin City</label>
-                  <input type="text" id="pokecity" name="pokecity">
+    
+                <div class="lgbtn">
+                  <button type="button" id="add_pokemon" class="btn btn-secondary btn-lg btn-block">Add Pokemon</button>
                 </div>
-                <div>
-                  <label for="pokeurl">Url</label>            
-                  <input type="url" id="pokeurl" name="pokeurl">
-                </div>             
-                
-              </div>
-              <div class="addpokemon-right">
-                <div>
-                  <label for="moves">Moves</label>
-                  <input type="text" id="moves" name="moves">
-                  <input type="text" id="moves2" name="moves2">
-                  <input type="text" id="moves3" name="moves3">
-                  <input type="text" id="moves4" name="moves4">
-                </div>
-                <div>
-                  <label for="type">Type</label>
-                  <input type="text" id="type" name="type">
-                  <input type="text" id="type2" name="type2">
-                </div>
+            </div>
               </div>
             </div>
-
-            <div class="lgbtn">
-              <button type="button" id="add_pokemon" class="btn btn-secondary btn-lg btn-block">Add Pokemon</button>
-            </div>
+          </div>
         </div>
-        <div>
-            <h3>Add Person</h3>
-            <!-- name, originCity, url,lastName,friends,caughtPokemon -->
-            <div class="addpersons">
-              <div class="addpersons-left">
-                <div>
-                  <label for="personname">Person Name</label>
-                  <input type="text" id="personname" name="personname">
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Add Person
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="addpersons">
+                <div class="addpersons-left">
+                  <div>
+                    <label for="personname">Person Name</label>
+                    <input type="text" id="personname" name="personname">
+                  </div>
+                  <div>
+                    <label for="personlastname">Person Last Name</label>
+                    <input type="text" id="personlastname" name="persaonlastnme">
+                  </div>
                 </div>
-                <div>
-                  <label for="personlastname">Person Last Name</label>
-                  <input type="text" id="personlastname" name="persaonlastnme">
+                <div class="addpersons-right">
+                  <div>
+                    <label for="personcity">Origin City</label>
+                    <input type="text" id="personcity" name="personcity">
+                  </div>
+                  <div>
+                    <label for="personurl">Url</label>
+                    <input type="url" id="personurl" name="personurl">
+                  </div>
                 </div>
               </div>
-              <div class="addpersons-right">
-                <div>
-                  <label for="personcity">Origin City</label>
-                  <input type="text" id="personcity" name="personcity">
-                </div>
-                <div>
-                  <label for="personurl">Url</label>
-                  <input type="url" id="personurl" name="personurl">
-                </div>
+  
+              <div class="lgbtn">
+                <button type="button" id="add_person" class="btn btn-secondary btn-lg btn-block">Add Person</button>
               </div>
+              
+          </div>
             </div>
-
-            <div class="lgbtn">
-              <button type="button" id="add_person" class="btn btn-secondary btn-lg btn-block">Add Person</button>
-            </div>
-            
-        </div>
-          
+          </div>
+        </div>          
     </section>
     <section>
         <hr>
         <h2>Edit Characters</h2>
-        <div>
-            <h3>Tame Pokemon</h3>
-            <label for="pokesearch">Search Pokemon</label>
-            <input type="text" id="pokesearch" name="pokesearch">
-            <label for="pokenickname">Nickname</label>
-            <input type="text" id="pokenickname" name="pokenickname">
-            <label for="poketrainer">Trainer</label>
-            <input type="text" id="poketrainer">
-            <div class="lgbtn">
-              <button type="button" id="tame_pokemon" class="btn btn-secondary btn-lg btn-block">Tame Pokemon</button>
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Tame Pokemon
+                </button>
+              </h2>
             </div>
-            
-        </div>
-        <div>
-            <h3>Add Friends</h3>
-            <label for="searchcharacter">Search Character</label>
-            <input type="text" id="searchcharacter" name="searchcharacter">
-            <label for="friends">Friends</label>
-            <input type="text" id="friends" name="friends">
-            <div class="lgbtn">
-              <button type="button" id="add_friends" class="btn btn-secondary btn-lg btn-block">Add Friends</button>
+        
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <div>
+                  <label for="pokesearch">Search Pokemon</label>
+                  <input type="text" id="pokesearch" name="pokesearch">
+                  <label for="pokenickname">Nickname</label>
+                  <input type="text" id="pokenickname" name="pokenickname">
+                  <label for="poketrainer">Trainer</label>
+                  <input type="text" id="poketrainer">
+                  <div class="lgbtn">
+                    <button type="button" id="tame_pokemon" class="btn btn-secondary btn-lg btn-block">Tame Pokemon</button>
+                  </div>
+              </div>
+              </div>
             </div>
-        </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Add Friends
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <div>
+                  <label for="searchcharacter">Search Character</label>
+                  <input type="text" id="searchcharacter" name="searchcharacter">
+                  <label for="friends">Friends</label>
+                  <input type="text" id="friends" name="friends">
+                  <div class="lgbtn">
+                    <button type="button" id="add_friends" class="btn btn-secondary btn-lg btn-block">Add Friends</button>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        
 
     </section>
     <section>
